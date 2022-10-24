@@ -21,8 +21,8 @@
     <header class="bg-primary d-flex justify-content-center">
         <h1 class="text-light">Weather Dashboard</h1>
     </header>
-    <main class="row col-12 px-3">
-        <div class="row col-12 col-md-4 col-lg-2 my-3">
+    <main class="row col-12 m-3">
+        <div class="row col-12 col-md-4 col-lg-3 my-3">
             <h2>Search for a City:</h2>
             <form id="search-card">
                 <input type="text" placeholder="City" id="city-input" class="col-12 mb-3">
@@ -30,14 +30,21 @@
             </form>
             <div class='my-3' id="previous-searches"></div>
         </div>
-        <div class="row col-12 col-md-8 col-lg-10 invisible" id="results">
-            <div class="card row col-7" id="city-card">
-                <div class="card-header"></div>
-                <div class="card-body"></div>
+        <div class="row col-12 col-md-7 col-lg-8 ms-5 invisible" id="results">
+            <div class="card row col-12 px-0" id="city-card">
+                <div class="card-header bg-primary">
+                    <h3 id="city-name"></h3>
+                    <img id="weather-icon"></img>
+                </div>
+                <div class="card-body">
+                    <p id="temperature"></p>
+                    <p id="wind"></p>
+                    <p id="humidity"></p>
+                </div>
             </div>
-            <div class="row col-7">
+            <div class="my-3">
                 <h4>5-Day Forecast:</h4>
-                <div id="five-day"></div>
+                <div class="row col-12" id="five-day"></div>
             </div>
         </div>
     </main>
